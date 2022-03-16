@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spaceship Configurator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container">
+        <h1>Spaceship configurator</h1>
+        <div class="main_left">
+            <h2>Select color:</h2>
+            <div class="main_left_row">
+                <input id="color1" type="radio" value="0" name="color" checked>
+                    <label for="color1">
+                    <div class="main_left_box">
+                        <div class="main_left_box_color snow"></div>
+                        <div class="main_left_box_price withcolor">+0€</div>
+                        <div class="main_left_box_title">Snow</div>
+                    </div>
+                </label>
+                </input>
+                <input id="color2" type="radio" value="100" name="color" >
+                    <label for="color2">
+                    <div class="main_left_box">
+                        <div class="main_left_box_color volcano"></div>
+                        <div class="main_left_box_price withcolor">+100€</div>
+                        <div class="main_left_box_title">Volcano</div>
+                    </div>
+                    </label>
+                </input>
+                <input id="color3" type="radio" value="100" name="color">
+                    <label for="color3">
+                    <div class="main_left_box">
+                        <div class="main_left_box_color sky"></div>
+                        <div class="main_left_box_price withcolor">+100€</div>
+                        <div class="main_left_box_title">Sky</div>
+                    </div>
+                    </label>
+                </input>
+            </div>   
+            
+            <h2>Select power:</h2>
+            <div class="main_left_row">
+                <input id="power1" type="radio" value="0" name="power" checked>
+                <label for="power1">
+                <div class="main_left_box">
+                    <div class="main_left_box_title">100 MW</div>
+                    <div class="main_left_box_price">+0€</div>
+                </div>
+                </label>                
+                <input id="power2" type="radio" value="200" name="power">
+                <label for="power2">
+                <div class="main_left_box">
+                    <div class="main_left_box_title">150 MW</div>
+                    <div class="main_left_box_price">+200€</div>
+                </div>
+                </label>
+                <input id="power3" type="radio" value="500" name="power">
+                <label for="power3">
+                <div class="main_left_box">
+                    <div class="main_left_box_title">200 MW</div>
+                    <div class="main_left_box_price">+500€</div>
+                </div>
+                </label>
+            </div>     
+            
+            <h2>Warp drive:</h2>
+            <div class="main_left_row">
+                <input id="drive1" type="radio" value="0" name="drive" checked>
+                <label for="drive1">
+                <div class="main_left_box">
+                    <div class="main_left_box_title">NO</div>
+                    <div class="main_left_box_price">+0€</div>
+                </div>
+                </label>
+                <input id="drive2" type="radio" value="1000" name="drive">
+                <label for="drive2">
+                <div class="main_left_box">
+                    <div class="main_left_box_title">YES</div>
+                    <div class="main_left_box_price">+1000€</div>
+                </div>
+                </label>
+                <input id="drive3" type="radio" value="" name="">
+                <label for="drive3">
+                <div class="main_left_box hidden">
+                </div>
+                </label>
+            </div>  
+            
+            <h2>Select option package:</h2>
+            <div class="main_left_row select_option">
+                <input id="package1" type="radio" value="0" name="package" checked>
+                <label for="package1">
+                <div class="main_left_box no_padding">
+                    <div class="main_left_box_title">Basic</div>
+                    <div class="main_left_box_price">&nbsp;</div>
+                    <div class="option_details">
+                        <ul>
+                            <li>Air conditioning</li>
+                            <li>Cloth seats</li>
+                            <li>Fm radio</li>
+                        </ul>
+                    </div>
+                </div>
+                </label>
+                <input id="package2" type="radio" value="100" name="package">
+                <label for="package2">
+                <div class="main_left_box no_padding">
+                    <div class="main_left_box_title">Sport</div>
+                    <div class="main_left_box_price">+100€</div>
+                    <div class="option_details">
+                        <ul>
+                            <li>Air conditioning</li>
+                            <li>Cloth seats</li>
+                            <li>Fm radio</li>
+                            <li class="roboto">Personal tech support</li>
+                        </ul>
+                    </div>
+                </div>
+                </label>
+                <input id="package3" type="radio" value="500" name="package">
+                <label for="package3">
+                <div class="main_left_box no_padding">
+                    <div class="main_left_box_title">Lux</div>
+                    <div class="main_left_box_price">+500€</div>
+                    <div class="option_details">
+                        <ul>
+                            <li>Air conditioning</li>
+                            <li>Luxury seats</li>
+                            <li>Fm radio</li>
+                            <li>Chrome weels</li>
+                            <li>Window tint</li>
+                            <li>Subwoofer</li>
+                        </ul>
+                    </div>
+                </div>
+                </label>
+            </div>     
+        </div>
+        <div class="main_right">
+            <div class="total_price_box">
+                <div class="total_price_box_row">
+                    <div class="total_price_box_row_left">Base price:</div>
+                    <div class="total_price_box_row_right">1000€</div>
+                </div>
+                <div class="total_price_box_row">
+                    <div class="total_price_box_row_left">Color:</div>
+                    <div class="total_price_box_row_right">+<span id="color">0</span>€</div>
+                </div>
+                <div class="total_price_box_row">
+                    <div class="total_price_box_row_left">Power:</div>
+                    <div class="total_price_box_row_right">+<span id="power">0</span>€</div>
+                </div>
+                <div class="total_price_box_row">
+                    <div class="total_price_box_row_left">Warp drive:</div>
+                    <div class="total_price_box_row_right">+<span id="drive">0</span>€</div>
+                </div>
+                <div class="total_price_box_row">
+                    <div class="total_price_box_row_left">Option package:</div>
+                    <div class="total_price_box_row_right">+<span id="package">0</span>€</div>
+                </div>
+                <div class="total_price_box_row last_price_box_row">
+                    <div class="total_price_box_row_left">Total:</div>
+                    <div class="total_price_box_row_right"><span id="total_bill"></span>€</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
